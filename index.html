@@ -1,138 +1,271 @@
-<!DOCTYPE html>
+<!DOCTYPE html >
 <html lang="en" data-theme="light">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
-    <title>nature’s Platter</title> 
-    <!-- google fonts links -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
-           <!-- daisy ui -->
-<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
-<!-- font awesome -->
-<script src="https://kit.fontawesome.com/ef3b97f081.js" crossorigin="anonymous"></script>
-<style>
-    .font-sora {
-  font-family: "Sora", serif;
-}
-</style>
-</head>
-<body class="font-sora w-full mx-auto">
-<!-- header -->
-  <header>
-    <!-- navbar -->
-      <nav class="w-11/12 lg:w-10/12 mx-auto relative pt-5">
-        <div class="mx-auto  justify-between navbar bg-base-100">
-    <div class=" ">
-      <a class="text-xl"><img src="./assets/logo-header.png" alt=""></a>
-    </div>
-    <div class=" absolute left-1/2 -translate-x-1/2 w-fit hidden lg:flex">
-      <ul class="menu menu-horizontal px-1">
-        <li><a>Product</a></li>
-        <li><a>Services</a></li>
-        <li><a>Contact Us</a></li>
-      </ul>
-    </div> 
-    <div class="flex-row gap-6 menu">
-      <div class=" hidden lg:block"><i class="fa-solid fa-magnifying-glass"></i></div>
-      <div class="hidden lg:block "><i class="fa-solid fa-cart-shopping"></i></div>
-      <div class=" hidden lg:block"><a class="btn  btn-outline btn-success">Log In</a></div>
-      <div class=" hidden lg:block"><a class="btn btn-success">Register</a></div>
-      <div class="dropdown">
-        <div tabindex="0" role="button" class="btn  btn-ghost lg:hidden">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="stroke-green-600 h-10 w-10"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor">
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="w-1"
-              d="M4 6h16M4 12h8m-8 6h16" />
-          </svg>
+    <head >
+        <meta charset="UTF-8"  >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+        <title>nature’s Platter</title> 
+        <!-- google fonts links -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+               <!-- daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/ef3b97f081.js" crossorigin="anonymous"></script>
+    <style>
+        .font-sora {
+      font-family: "Sora", serif;
+    }
+    </style>
+    </head>
+    <body class="font-sora  ">
+        <!-- header -->
+          <header class="">
+            <!-- navbar -->
+            <!-- <nav class="w-11/12 lg:w-10/12 mx-auto relative pt-5">
+                <div class="mx-auto  justify-between navbar bg-base-100">
+            <div class=" ">
+              <a class="text-xl"><img src="./assets/logo-header.png" alt=""></a>
+            </div>
+            <div class=" absolute left-1/2 -translate-x-1/2 w-fit hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Product</a></li>
+                <li><a>Services</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div> 
+            <div class="flex-row gap-6 menu">
+              <div class=" hidden lg:block"><i class="fa-solid fa-magnifying-glass"></i></div>
+              <div class="hidden lg:block "><i class="fa-solid fa-cart-shopping"></i></div>
+              <div class=" hidden lg:block"><a class="btn  btn-outline btn-success">Log In</a></div>
+              <div class=" hidden lg:block"><a class="btn btn-success">Register</a></div>
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn  btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="stroke-green-600 h-10 w-10"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="w-1"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  <li><a>Product</a></li>
+                  <li><a>Services</a></li>
+                  <li><a>Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div></nav> -->
+          <!-- hr -->
+          <hr class="lg:hidden border-1 border-green-600 mt-5">
+          <!-- banner -->
+          <section class="bg-gradient-to-b from-[rgb(255,255,255)] to-[rgb(239,235,227)] mt-5 lg:mt-20">
+            <div class="hero lg:min-h-screen">
+              <div class="hero-content flex flex-col lg:flex-col text-center @apply p-0">
+                <div class="text-center space-y-5 w-3/4">
+                  <h1 class="lg:text-6xl text-4xl font-bold">Freshness <span class="text-yellow-500">You Can
+                   <br>Count</span> On, Prices<br> You’ll Love!</h1>
+                  <p class="py-6">
+                    Freshest, hand-picked vegetables straight from the farm to your table. We offer 100% organic, pesticide-free produce to keep your family healthy and happy. Taste the difference with nature’s best!
+                  </p>
+                </div>
+                <div><img class="w-full" src="./assets/hero-vegetables.png" alt=""></div>
+              </div>
+            </div>
+           </section>
+           </header>
+           <!-- main -->
+            <main>
+          <!-- services -->
+           <section class="w-11/12  lg:w-10/12 mx-auto mt-8 lg:mt-28 space-y-10">
+            <h1 class="lg:text-4xl text-3xl text-green-600 font-semibold">Services</h1>
+            <div class="justify-between gap-5 lg:gap-10 grid lg:grid-cols-3 grid-cols-1 " >
+              <div class="card bg-red-50 gap-5 bg-base-100 w-98 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="./assets/service.png"
+                    alt="Shoes"
+                    class="rounded-xl" />
+                </figure>
+                <div class=" card-body gap-5 items-center text-center">
+                  <h2 class="card-title">24/7 Services </h2>
+                  <p> Enjoy fresh vegetables anytime with our round-the-clock service. Order whenever you need, and we’ll ensure your fresh produce reaches you hassle-free, day or night</p>
+                </div>
+              </div>
+              <div class="card flex bg-red-50 flex-col justify-between gap-5 bg-base-100 w-98 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="./assets/delivery.png"
+                    alt="Shoes"
+                    class="rounded-xl" />
+                </figure>
+                <div class="card-body gap-5 items-center text-center">
+                  <h2 class="card-title">Fast Delivery</h2>
+                  <p>Get farm-fresh vegetables delivered to your doorstep in no time. We prioritize speed and freshness, ensuring your orders arrive quickly while maintaining top quality.</p>
+                </div>
+              </div>
+              <div class="card  bg-red-50 gap-5 bg-base-100 w-98 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="./assets/healthy.png"
+                    alt="Shoes"
+                    class="rounded-xl" />
+                </figure>
+                <div class="card-body gap-5 items-center text-center">
+                  <h2 class="card-title">Healthy Products</h2>
+                  <p>Our vegetables are organic, pesticide-free, and rich in nutrients. We provide the freshest, healthiest produce to support your well-being and a balanced diet every day.</p>
+                </div>
+              </div>
+            </div>
+           </section>
+<!-- Popular product -->
+ <section class="bg-red-50 py-12 lg:py-24  mt-8 lg:mt-28 ">
+     <div class="w-11/12  lg:w-10/12 mx-auto">
+      <h2 class="lg:text-4xl mb-10 text-3xl text-green-600 font-semibold">Popular Products</h2>
+      <!-- full flex container w -->
+       <div class="flex flex-col gap-5 lg:gap-10 lg:flex-row">
+       <!-- 30% off cart -->
+          <div class="flex flex-col lg:flex-row lg:max-w-[40%] bg-gradient-to-br  pb-56 relative from-green-500 rounded-xl to-slate-100 ">
+         <div class="flex flex-col justify-start w-5/6 lg:w-4/6 ml-10 mt-10 lg:space-y-5 space-y-8">
+             <h3 class="text-2xl font-semibold text-white">30% Off</h3>
+             <p>Enjoy 30% off on all fresh raw products. Shop now and get the best quality at unbeatable prices. Don’t miss out—this offer is available for a limited time only!</p>
+             <div ><button class="btn bg-white">Buy Now</button></div>
+         </div>
+         <div class="absolute bottom-0 right-0"><img max-w-full alt="popular product"
+     src="./assets/vegetable-offer.png"
+     class="max-w-md rounded-lg" /></div>
+     </div>
+     <!-- grid container -->
+
+     <div class="lg:max-w-[60%] grid grid-cols-2 gap-5 lg:grid-cols-3">
+      <!-- cart1 -->
+   <div class="flex items-center rounded-xl gap-2 p-3 bg-white">
+      <div class="bg-red-50 w-[50%] rounded-xl" ><img class="w-30 h-30 object-contain" src="./assets/potato.png"></div>
+      <div class="space-y-1 w-[50%]">
+          <p class="flex gap-3"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-orange-400" viewBox="0 0 576 512"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>4.5</p>
+          <p class=" text-xl">Onion 1kg</p>
+          <p>$19.40</p>
+      </div>
+   </div>
+      <!-- cart2 -->
+   <div class="flex items-center rounded-xl gap-2 p-3 bg-white">
+      <div class="w-[50%] bg-red-50 rounded-xl w-[50%]" ><img class="w-30 h-30 object-contain" src="./assets/Eggplant new.png" alt=""></div>
+      <div class="w-[50%] space-y-1">
+          <p class="flex gap-3"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-orange-400" viewBox="0 0 576 512"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>4.5</p>
+          <p class=" text-xl">Eggplant 1kg</p>
+          <p>$10.40</p>
+      </div>
+   </div>
+      <!-- cart3 -->
+   <div class="flex items-center rounded-xl gap-2 p-3 bg-white">
+      <div class="bg-red-50 rounded-xl w-[50%]" ><img class="w-30 h-30 object-contain" src="./assets/pumpkin.png" alt=""></div>
+      <div class="space-y-1 w-[50%]">
+          <p class="flex gap-3"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-orange-400" viewBox="0 0 576 512"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>4.5</p>
+          <p class=" text-xl">Pumpkin 1kg</p>
+          <p>$15.40</p>
+      </div>
+   </div>
+      <!-- cart4 -->
+   <div class="flex items-center rounded-xl gap-2 p-3 bg-white">
+      <div class="bg-red-50 rounded-xl w-[50%]" ><img class="w-30 h-30 object-contain" src="./assets/Green-Chili-Free-PNG.png" alt=""></div>
+      <div class="space-y-1 w-[50%]">
+          <p class="flex gap-3"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-orange-400" viewBox="0 0 576 512"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>4.5</p>
+          <p class=" text-xl">Green Chili 1kg</p>
+          <p>$20.10</p>
+      </div>
+   </div>
+      <!-- cart5 -->
+   <div class="flex items-center rounded-xl gap-2 p-3 bg-white">
+      <div class="bg-red-50 rounded-xl w-[50%]" ><img class="w-30 h-30 object-contain" src="./assets/lady-finger.png"></div>
+      <div class="space-y-1 w-[50%]">
+          <p class="flex gap-3"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-orange-400" viewBox="0 0 576 512"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>4.5</p>
+          <p class=" text-xl">Lady Finger</p>
+          <p>$09.90</p>
+      </div>
+   </div>
+      <!-- cart6 -->
+   <div class="flex items-center rounded-xl gap-2 p-3 bg-white">
+      <div class="bg-red-50 rounded-xl w-[50%]" ><img class="w-30 h-30 object-contain" src="./assets/cauliflower.png" alt=""></div>
+      <div class="space-y-1 w-[50%]">
+          <p class="flex gap-3"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-orange-400" viewBox="0 0 576 512"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>4.5</p>
+          <p class=" text-xl">Cauliflower 2pcs</p>
+          <p>$39.40</p>
+      </div>
+   </div>
+      <!-- cart7 -->
+   <div class="flex justify-center items-center rounded-xl gap-2 p-3 bg-white">
+      <div class="bg-red-50 rounded-xl w-[50%]" ><img class="w-30 h-30 object-contain" src="./assets/Cabbage-PNG-Photos.png" alt=""></div>
+      <div class="space-y-1 w-[50%]">
+          <p class="flex gap-3"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-orange-400" viewBox="0 0 576 512"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>4.5</p>
+          <p class=" text-xl">Cabbage 1pcs</p>
+          <p>$12.40</p>
+      </div>
+   </div>
+      <!-- cart8 -->
+   <div class="flex items-center rounded-xl gap-2 p-3 bg-white">
+      <div class="bg-red-50 rounded-xl w-[50%]" ><img class="w-30 h-30 object-contain" src="./assets/carrot.png" alt=""></div>
+      <div class="space-y-1 w-[50%]">
+          <p class="flex gap-3"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-orange-400" viewBox="0 0 576 512"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>4.5</p>
+          <p class=" text-xl">Carrot 1kg</p>
+          <p>$07.50</p>
+      </div>
+   </div>
+      <!-- cart9 -->
+   <div class="flex hidden lg:inline-flex items-center rounded-xl gap-2 p-3 bg-white">
+      <div class="bg-red-50 rounded-xl w-[50%]" ><img class="w-30 h-30 object-contain" src="./assets/garlic.png" alt=""></div>
+      <div class="space-y-1 w-[50%]">
+          <p class="flex gap-3"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-orange-400" viewBox="0 0 576 512"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>4.5</p>
+          <p class=" text-xl">Garlic 1kg</p>
+          <p>$25.60</p>
+      </div>
+   </div>
         </div>
-        <ul
-          tabindex="0"
-          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-          <li><a>Product</a></li>
-          <li><a>Services</a></li>
-          <li><a>Contact Us</a></li>
-        </ul>
-      </div>
-    </div>
-  </div></nav>
-  <!-- hr -->
-  <hr class="lg:hidden border-1 border-green-600 mt-5">
-  <!-- banner -->
-    <section class="bg-gradient-to-b from-[rgb(255,255,255)] to-[rgb(239,235,227)] mt-5 lg:mt-20">
-  <div class="hero lg:min-h-screen">
-    <div class="hero-content flex flex-col lg:flex-col text-center @apply p-0">
-      <div class="text-center space-y-5 w-3/4">
-        <h1 class="lg:text-6xl text-4xl font-bold">Freshness <span class="text-yellow-500">You Can
-         <br>Count</span> On, Prices<br> You’ll Love!</h1>
-        <p class="py-6">
-          Freshest, hand-picked vegetables straight from the farm to your table. We offer 100% organic, pesticide-free produce to keep your family healthy and happy. Taste the difference with nature’s best!
-        </p>
-      </div>
-      <div><img class="w-full" src="./assets/hero-vegetables.png" alt=""></div>
-    </div>
+ </div>
   </div>
- </section>
- </header>
- <!-- main -->
-  <main>
-<!-- services -->
- <section class="w-11/12  lg:w-10/12 mx-auto mt-8 lg:mt-28 space-y-10">
-  <h1 class="text-4xl text-green-600 font-semibold">Services</h1>
-  <div class="justify-between  gap-10 grid lg:grid-cols-3 grid-cols-1 " >
-    <div class="card bg-red-50 gap-5 bg-base-100 w-98 shadow-xl">
-      <figure class="px-10 pt-10">
-        <img
-          src="./assets/service.png"
-          alt="Shoes"
-          class="rounded-xl" />
-      </figure>
-      <div class=" card-body gap-5 items-center text-center">
-        <h2 class="card-title">24/7 Services </h2>
-        <p> Enjoy fresh vegetables anytime with our round-the-clock service. Order whenever you need, and we’ll ensure your fresh produce reaches you hassle-free, day or night</p>
-      </div>
-    </div>
-    <div class="card flex bg-red-50 flex-col justify-between gap-5 bg-base-100 w-98 shadow-xl">
-      <figure class="px-10 pt-10">
-        <img
-          src="./assets/delivery.png"
-          alt="Shoes"
-          class="rounded-xl" />
-      </figure>
-      <div class="card-body gap-5 items-center text-center">
-        <h2 class="card-title">Fast Delivery</h2>
-        <p>Get farm-fresh vegetables delivered to your doorstep in no time. We prioritize speed and freshness, ensuring your orders arrive quickly while maintaining top quality.</p>
-      </div>
-    </div>
-    <div class="card  bg-red-50 gap-5 bg-base-100 w-98 shadow-xl">
-      <figure class="px-10 pt-10">
-        <img
-          src="./assets/healthy.png"
-          alt="Shoes"
-          class="rounded-xl" />
-      </figure>
-      <div class="card-body gap-5 items-center text-center">
-        <h2 class="card-title">Healthy Products</h2>
-        <p>Our vegetables are organic, pesticide-free, and rich in nutrients. We provide the freshest, healthiest produce to support your well-being and a balanced diet every day.</p>
-      </div>
-    </div>
-  </div>
- </section>
-
-  </main>
-<!-- footer-->
- <footer>
-
- </footer>
-</body>
+    </section>
+    <!--Arrival Offers -->
+     <section class="w-11/12  lg:w-10/12 mx-auto mt-8 lg:mt-28 space-y-10">
+<h2 class="text-green-600 font-semibold text-3xl">Arrival & Offers</h2>
+<!-- main div -->
+<div class="flex flex-col lg:flex-row gap-10">
+  <!-- div 1 -->
+ <div class="lg:w-[60%] rounded-xl flex items-center justify-around pt-10 bg-green-900">
+  <!-- content section -->
+  <div class="lg:space-y-10 space-y-5 flex flex-col align-center">
+    <img src="./assets/dawat-logo.png" alt="">
+<button class="btn btn-success">Cook Exotic Dishes</button>
+<h3 class=" text-3xl text-white">Up to <span class="font-bold">20% OFF</span></h3>
+</div>
+<!-- img section -->
+ <div>
+  <img src="./assets/dawat-mock-up.png" alt="">
+</div>
+ </div>
+ <!-- div 2 -->
+ <div class="lg:w-[40%] rounded-xl flex items-center justify-around pt-10 bg-blue-950">
+  <!-- content section -->
+  <div class=" lg:space-y-10 flex flex-col align-center">
+    <img class="w-24 " src="./assets/india-gate-logo.png" alt="">
+<button class="btn btn-success">Cook Exotic Dishes</button>
+<h3 class=" text-3xl text-white">Up to <span class="font-bold">20% OFF</span></h3>
+</div>
+<!-- img section -->
+ <div>
+  <img src="./assets/india-gate-mock-up.png" alt="">
+</div>
+ </div>
+</div>
+     </section>
+            </main>
+        </body>
 </html>
