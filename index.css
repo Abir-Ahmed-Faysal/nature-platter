@@ -1,11 +1,4 @@
 
-        /* Container for positioning */
-        .animated-div {
-           
-            position: relative;
-            width: 900px;
-            height: 500px;
-        }
         /* Big Image  */
         .big-image {
             position: absolute;
@@ -19,18 +12,14 @@
             animation: fall 2s linear infinite;
         }
 
-        /* start positions */
-        .capsicum     { left: 35%; animation-delay: 0.6s; }
-        .cauliflower { left: 40%; animation-delay: 0.5s; }
-        .pumpkin1   { left: 45%; animation-delay: 0.8s; }
-        .tomato     { left: 48%; animation-delay: 0.6s; }
-        .potato      { left: 27%; animation-delay: 0.7s; }
-        .pumpkin2   { left: 30%; animation-delay: 0.8s; }
-        .eggplant    { left: 35%; animation-delay: .9s; }
-        .full    { left: 65%; animation-delay: .6s; }
-        
-       
-      
+               /* start positions */
+               .capsicum     { left: 35%; animation-delay: 0.6s; }
+               .cauliflower { left: 40%; animation-delay: 0.5s; }
+               .pumpkin1   { left: 45%; animation-delay: 0.8s; }
+               .tomato     { left: 48%; animation-delay: 0.6s; }
+               .potato      { left: 27%; animation-delay: 0.7s; }
+               .pumpkin2   { left: 30%; animation-delay: 0.8s; }
+               .eggplant    { left: 35%; animation-delay: .9s; }
         @keyframes fall {
             0% { top: -50px; opacity: 1; }
             100% { top: 60%; opacity: 0; }
